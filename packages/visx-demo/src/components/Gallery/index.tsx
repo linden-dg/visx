@@ -48,6 +48,7 @@ import * as VoronoiTile from './VoronoiTile';
 import * as WordcloudTile from './WordcloudTile';
 import * as XYChartTile from './XYChartTile';
 import * as ZoomITile from './ZoomITile';
+import * as SankeyTile from './SankeyTile';
 import { VisxPackage } from '../../types';
 import exampleToVisxDependencyLookup, {
   visxPackages,
@@ -100,6 +101,7 @@ export const tiles = [
   TreesTile,
   VoronoiTile,
   WordcloudTile,
+  SankeyTile,
 ];
 
 export default function Gallery() {
