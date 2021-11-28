@@ -189,6 +189,6 @@ const getUniqueNodesFromLinks = (
   color: ColorAccessor
 ): Node[] =>
   links
-    .reduce((a, d) => [...a, d.target, d.source], [] as NodeId[])
+    .reduce((a, d) => [...a, d.source, d.target], [] as NodeId[])
     .filter((v, i, a) => a.indexOf(v) === i)
     .map((d, i) => ({ id: d, color: color({ id: d }, i) }));
